@@ -192,8 +192,6 @@ def play_round(group: int, season: int, team: dict, trigs: list[dict], rounds: l
         outcome_banner(last.outcome, res, season, int(last["round"]))
 
     if current is None and next_round > C.ROUNDS_PER_SEASON:
-        st.balloons() if st.session_state.get("_celebrated") != (group, season) else None
-        st.session_state["_celebrated"] = (group, season)
         st.subheader(f"Season {season} finished 🎉")
         st.metric("Total season cost", f"{coins(done.total_cost.sum())} coins")
         history(ev)

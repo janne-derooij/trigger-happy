@@ -41,9 +41,9 @@ ENVELOPE_VALUES = [10_000, 20_000, 30_000]
 # NOT for scoring (scoring uses what teams actually draw).
 # !!! PLACEHOLDERS: replace with the distribution of your physical envelopes !!!
 ENVELOPE_PROBS = {
-    3: {10_000: 0.1, 20_000: 0.2, 30_000: 0.7},   # long lead time (4 days)
-    4: {10_000: 0.2, 20_000: 0.4, 30_000: 0.4},   # medium lead time (3 days)
-    5: {10_000: 0.5, 20_000: 0.3, 30_000: 0.2},   # short lead time (2 days)
+    3: {10_000: 0.0, 20_000: 0.1, 30_000: 0.9},   # long lead time (4 days)
+    4: {10_000: 0.1, 20_000: 0.4, 30_000: 0.5},   # medium lead time (3 days)
+    5: {10_000: 0.7, 20_000: 0.2, 30_000: 0.1},   # short lead time (2 days)
 }
 
 # --- Dashboard --------------------------------------------------------------
